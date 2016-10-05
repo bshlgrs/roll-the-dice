@@ -6,3 +6,4 @@ source "https://rubygems.org"
 gem 'oga'
 gem 'sinatra'
 gem 'dalli'
+gem 'curb'
