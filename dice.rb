@@ -8,7 +8,7 @@ $cache = Dalli::Client.new("localhost:11211", { namespace: "dice" })
 def get_odds
   cached_odds, date = $cache.get("odds")
 
-  return cached_odds if date && date > Time.new.to_i - 60
+  return cached_odds if date && date > Time.new.to_i - 60 * 10
 
   odds = scrape_odds
   $cache.set("odds", [odds, Time.new.to_i])
