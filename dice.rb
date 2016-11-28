@@ -56,7 +56,7 @@ end
 get '/' do
   odds = get_odds
 
-  @winner = random_choice(odds)
+  @winner = "Trump" # random_choice(odds)
 
   candidates = {
     "Trump" => [
