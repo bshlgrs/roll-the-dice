@@ -54,7 +54,7 @@ def random_choice(odds)
 end
 
 get '/' do
-  odds = get_odds
+  # odds = get_odds
 
   @winner = "Trump" # random_choice(odds)
 
